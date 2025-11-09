@@ -1,276 +1,390 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>عالم الفلك العباسي المجهول: حبش الحاسب</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap');
-        body {
-            font-family: 'Tajawal', sans-serif;
-        }
+      @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap");
+      body {
+        font-family: "Tajawal", sans-serif;
+      }
     </style>
-</head>
-<body class="bg-gray-100 text-gray-900">
+  </head>
+  <body class="bg-gray-100 text-gray-900">
     <custom-navbar></custom-navbar>
-    
+
     <main class="container mx-auto px-4 py-8">
-        <!-- Hero Section -->
-        <section class="bg-gradient-to-r from-blue-900 to-indigo-800 rounded-2xl p-8 mb-12 text-white shadow-xl">
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-6 md:mb-0">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-4">حبش الحاسب المروزي</h1>
-                    <p class="text-xl mb-6">عالم الفلك والرياضيات المجهول من العصر العباسي الذهبي</p>
-                    <div class="flex items-center space-x-4">
-                        <span class="bg-blue-700 px-4 py-2 rounded-full">٧٨٠ - ٨٦٠ م</span>
-                        <span class="bg-indigo-700 px-4 py-2 rounded-full">عصر المأمون</span>
-                    </div>
-                </div>
-                <div class="md:w-1/2 flex justify-center">
-                    <img src="http://static.photos/historical/1024x576/42" alt="تصوير فني لشخصية حبش الحاسب العالم الفلكي" class="rounded-xl shadow-lg border-4 border-white w-full max-w-md">
-                    <img src="http://static.photos/workspace/1024x576/42" alt="حبش الحاسب يعمل على حسابات فلكية في بيت الحكمة" class="rounded-xl shadow-lg border-4 border-white w-full max-w-md ml-4 hidden md:block">
-                </div>
-</div>
-        </section>
-
-        <!-- Biography Section -->
-        <section class="mb-16 bg-white rounded-2xl p-8 shadow-lg">
-            <h2 class="text-3xl font-bold mb-6 text-blue-900 border-b-2 border-blue-200 pb-2">حياته ونشأته</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="md:col-span-2">
-                    <p class="text-lg mb-4 leading-relaxed">
-                        وُلِد حبش بن عبد الله المروزي الحاسب في مدينة مرو بخراسان (تركمانستان حاليًا) حوالي سنة 780 ميلادية. نشأ في بيئة علمية مزدهرة حيث كانت مرو مركزًا مهمًا للعلوم في الدولة العباسية.
-                    </p>
-                    <p class="text-lg mb-4 leading-relaxed">
-                        انتقل إلى بغداد في شبابه حيث انضم إلى "بيت الحكمة" الذي أسسه الخليفة المأمون، والذي كان بمثابة أكاديمية علمية ضخمة تضم أفضل العقول في ذلك الوقت من مختلف الحضارات.
-                    </p>
-                    <p class="text-lg leading-relaxed">
-                        تميز حبش الحاسب بشخصية متواضعة وعقلية تحليلية دقيقة، وكان معروفًا بدقته المتناهية في الحسابات الفلكية والرياضية مما أكسبه لقب "الحاسب".
-                    </p>
-                </div>
-                <div class="flex flex-col items-center">
-                    <img src="https://www.aljazeera.net/wp-content/uploads/2014/07/001034d3-52e1-44c5-b9e4-4fe81fa8c5ec.jpeg?resize=686%2C513&quality=80 alt="آثار مدينة مرو القديمة مسقط رأس حبش الحاسب" class="rounded-lg mb-4 shadow-md w-full">
-<p class="text-sm text-gray-600 text-center">مدينة مرو القديمة مسقط رأس حبش الحاسب</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Discoveries Section -->
-        <section class="mb-16">
-            <h2 class="text-3xl font-bold mb-8 text-blue-900 border-b-2 border-blue-200 pb-2">إنجازاته واكتشافاته</h2>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Discovery 1 -->
-                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
-                    <div class="bg-blue-100 p-4 rounded-lg mb-4">
-                        <i data-feather="sun" class="text-blue-600 w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">حساب قطر الأرض</h3>
-                    <p class="text-gray-700">
-                        قام بحساب قطر الأرض بدقة مذهلة تبلغ 7,850 ميل (القياس الحديث 7,926 ميل) من خلال قياسات زاوية الشمس في موقعين مختلفين.
-                    </p>
-                </div>
-                
-                <!-- Discovery 2 -->
-                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
-                    <div class="bg-indigo-100 p-4 rounded-lg mb-4">
-                        <i data-feather="moon" class="text-indigo-600 w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">حركة القمر</h3>
-                    <p class="text-gray-700">
-                        وضع نظرية متقدمة لحركة القمر تضمنت مفاهيم القصور الذاتي والجاذبية قبل نيوتن بثمانية قرون.
-                    </p>
-                </div>
-                
-                <!-- Discovery 3 -->
-                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
-                    <div class="bg-purple-100 p-4 rounded-lg mb-4">
-                        <i data-feather="star" class="text-purple-600 w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">الزيج الممتحن</h3>
-                    <p class="text-gray-700">
-                        ألف كتاب "الزيج الممتحن" الذي احتوى على جداول فلكية دقيقة استخدمت لقرون في العالم الإسلامي وأوروبا.
-                    </p>
-                </div>
-                
-                <!-- Discovery 4 -->
-                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
-                    <div class="bg-green-100 p-4 rounded-lg mb-4">
-                        <i data-feather="compass" class="text-green-600 w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">الميل المحوري للأرض</h3>
-                    <p class="text-gray-700">
-                        حدد ميل محور الأرض بدقة تبلغ 23°35' (القيمة الحديثة 23°26') وربط بين هذا الميل وتغير الفصول.
-                    </p>
-                </div>
-                
-                <!-- Discovery 5 -->
-                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
-                    <div class="bg-yellow-100 p-4 rounded-lg mb-4">
-                        <i data-feather="clock" class="text-yellow-600 w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">الساعات الفلكية</h3>
-                    <p class="text-gray-700">
-                        صمم ساعات فلكية دقيقة تعمل بالماء والزئبق لقياس الوقت والمواقيت الفلكية.
-                    </p>
-                </div>
-                
-                <!-- Discovery 6 -->
-                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
-                    <div class="bg-red-100 p-4 rounded-lg mb-4">
-                        <i data-feather="globe" class="text-red-600 w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">خرائط النجوم</h3>
-                    <p class="text-gray-700">
-                        رسم خرائط دقيقة للنجوم تضمنت 1022 نجمة مع تحديد درجات سطوعها وحركاتها.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Beliefs Section -->
-        <section class="mb-16 bg-white rounded-2xl p-8 shadow-lg">
-            <h2 class="text-3xl font-bold mb-6 text-blue-900 border-b-2 border-blue-200 pb-2">معتقداته الفلسفية</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-3 text-indigo-800">النظرة العلمية</h3>
-                    <p class="text-lg mb-4 leading-relaxed">
-                        آمن حبش الحاسب بأن الكون يسير وفق قوانين رياضية يمكن للعقل البشري اكتشافها وفهمها. كان يرى أن العلم التجريبي والرياضي هو الطريق الأمثل لفك أسرار الكون.
-                    </p>
-                    <p class="text-lg leading-relaxed">
-                        رفض التفسيرات الأسطورية للظواهر الفلكية وأصر على أن كل ظاهرة طبيعية لها سبب مادي يمكن قياسه وحسابه.
-                    </p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-3 text-indigo-800">العلاقة بين العلم والدين</h3>
-                    <p class="text-lg mb-4 leading-relaxed">
-                        اعتبر أن دراسة الفلك هي شكل من أشكال عبادة الخالق، حيث أن فهم نظام الكون يقرب الإنسان من عظمة الخالق.
-                    </p>
-                    <p class="text-lg leading-relaxed">
-                        كان يرى أن العلم والدين لا يتعارضان، بل يكمل أحدهما الآخر، مع التأكيد على أن العلم يجب أن يكون مستقلًا في منهجه.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Legacy Section -->
-        <section class="bg-gradient-to-r from-indigo-900 to-blue-800 rounded-2xl p-8 text-white shadow-xl">
-            <h2 class="text-3xl font-bold mb-6 border-b-2 border-blue-300 pb-2">إرثه وتأثيره</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div>
-                    <p class="text-lg mb-4 leading-relaxed">
-                        على الرغم من نسيان اسمه في العصور اللاحقة، إلا أن أعمال حبش الحاسب شكلت أساسًا للعديد من الاكتشافات الفلكية اللاحقة. تم نقل العديد من جداوله الفلكية إلى أوروبا وترجمتها إلى اللاتينية.
-                    </p>
-                    <p class="text-lg leading-relaxed">
-                        تأثر به العديد من العلماء اللاحقين مثل البيروني وابن الهيثم، كما أن بعض حساباته كانت أكثر دقة من تلك التي قدمها كوبرنيكوس بعدة قرون.
-                    </p>
-                </div>
-                <div class="flex justify-center">
-                    <img src="http://static.photos/education/1024x576/44" alt="صفحات من كتاب الزيج الممتحن بحبش الحاسب" class="rounded-lg border-4 border-white shadow-md w-full max-w-md">
-</div>
-            </div>
-        </section>
-
-        <!-- Timeline Section -->
-        <section class="mt-16">
-            <h2 class="text-3xl font-bold mb-8 text-blue-900 border-b-2 border-blue-200 pb-2">خط زمني لحياته</h2>
-            <div class="relative">
-                <!-- Timeline line -->
-                <div class="absolute left-1/2 h-full w-1 bg-blue-300 transform -translate-x-1/2"></div>
-                
-                <!-- Timeline items -->
-                <div class="mb-8">
-                    <div class="flex items-center">
-                        <div class="w-6 h-6 rounded-full bg-blue-600 absolute left-1/2 transform -translate-x-1/2"></div>
-                    </div>
-                    <div class="flex flex-col md:flex-row justify-between items-center">
-                        <div class="md:w-5/12 mb-4 md:mb-0 md:text-right px-4">
-                            <h3 class="text-xl font-bold">٧٨٠ م</h3>
-                            <p>ولادة حبش الحاسب في مرو</p>
-                        </div>
-                        <div class="md:w-2/12"></div>
-                        <div class="md:w-5/12 px-4">
-                            <img src="http://static.photos/historical/1024x576/44" alt="خريطة الخلافة العباسية في عصر حبش الحاسب" class="rounded-lg shadow-sm">
-</div>
-                    </div>
-                </div>
-                
-                <div class="mb-8">
-                    <div class="flex items-center">
-                        <div class="w-6 h-6 rounded-full bg-blue-600 absolute left-1/2 transform -translate-x-1/2"></div>
-                    </div>
-                    <div class="flex flex-col md:flex-row justify-between items-center">
-                        <div class="md:w-5/12 mb-4 md:mb-0 md:text-right px-4">
-                            <img src="http://static.photos/historical/1024x576/45" alt="بيت الحكمة حيث عمل حبش الحاسب" class="rounded-lg shadow-sm">
-</div>
-                        <div class="md:w-2/12"></div>
-                        <div class="md:w-5/12 px-4">
-                            <h3 class="text-xl font-bold">٨٠٥ م</h3>
-                            <p>الانتقال إلى بغداد والانضمام إلى بيت الحكمة</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="mb-8">
-                    <div class="flex items-center">
-                        <div class="w-6 h-6 rounded-full bg-blue-600 absolute left-1/2 transform -translate-x-1/2"></div>
-                    </div>
-                    <div class="flex flex-col md:flex-row justify-between items-center">
-                        <div class="md:w-5/12 mb-4 md:mb-0 md:text-right px-4">
-                            <h3 class="text-xl font-bold">٨٣٠ م</h3>
-                            <p>قياس قطر الأرض بدقة مذهلة</p>
-                        </div>
-                        <div class="md:w-2/12"></div>
-                        <div class="md:w-5/12 px-4">
-                            <img src="http://static.photos/historical/1024x576/46" alt="أدوات فلكية استخدمها حبش الحاسب" class="rounded-lg shadow-sm">
-</div>
-                    </div>
-                </div>
-                
-                <div class="mb-8">
-                    <div class="flex items-center">
-                        <div class="w-6 h-6 rounded-full bg-blue-600 absolute left-1/2 transform -translate-x-1/2"></div>
-                    </div>
-                    <div class="flex flex-col md:flex-row justify-between items-center">
-                        <div class="md:w-5/12 mb-4 md:mb-0 md:text-right px-4">
-                            <img src="http://static.photos/historical/1024x576/47" alt="مخطوطات حبش الحاسب الفلكية" class="rounded-lg shadow-sm">
-</div>
-                        <div class="md:w-2/12"></div>
-                        <div class="md:w-5/12 px-4">
-                            <h3 class="text-xl font-bold">٨٥٠ م</h3>
-                            <p>إصدار كتاب "الزيج الممتحن"</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="mb-8">
-                    <div class="flex items-center">
-                        <div class="w-6 h-6 rounded-full bg-blue-600 absolute left-1/2 transform -translate-x-1/2"></div>
-                    </div>
-                    <div class="flex flex-col md:flex-row justify-between items-center">
-                        <div class="md:w-5/12 mb-4 md:mb-0 md:text-right px-4">
-                            <h3 class="text-xl font-bold">٨٦٠ م</h3>
-                            <p>وفاة حبش الحاسب في بغداد</p>
-                        </div>
-                        <div class="md:w-2/12"></div>
-                        <div class="md:w-5/12 px-4">
-                            <img src="http://static.photos/historical/1024x576/48" alt="بغداد في العصر العباسي حيث عاش حبش الحاسب" class="rounded-lg shadow-sm">
-</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer Note -->
-        <div class="mt-16 bg-white rounded-xl p-6 shadow-md text-center">
-            <p class="text-lg">
-                هذا البحث تم إعداده بعناية من قبل <span class="font-bold text-blue-800">زين الدين</span> كمشروع تعريفي بأحد أهم علماء الفلك المجهولين في الحضارة الإسلامية.
+      <!-- Hero Section -->
+      <section
+        class="bg-gradient-to-r from-blue-900 to-indigo-800 rounded-2xl p-8 mb-12 text-white shadow-xl"
+      >
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-6 md:mb-0">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">
+              حبش الحاسب المروزي
+            </h1>
+            <p class="text-xl mb-6">
+              عالم الفلك والرياضيات المجهول من العصر العباسي الذهبي
             </p>
+            <div class="flex items-center space-x-4">
+              <span class="bg-blue-700 px-4 py-2 rounded-full"
+                >٧٨٠ - ٨٦٠ م</span
+              >
+              <span class="bg-indigo-700 px-4 py-2 rounded-full"
+                >عصر المأمون</span
+              >
+            </div>
+          </div>
+          <div class="md:w-1/2 flex justify-center">
+            <img
+              src="https://firaasat.com/wp-content/uploads/2024/06/Al-Khwarizmi.jpg"
+              alt="تصوير فني لشخصية حبش الحاسب العالم الفلكي"
+              class="rounded-xl shadow-lg border-4 border-white w-1/2 max-w-sm"
+            />
+          </div>
         </div>
+      </section>
+
+      <!-- Biography Section -->
+      <section class="mb-16 bg-white rounded-2xl p-8 shadow-lg">
+        <h2
+          class="text-3xl font-bold mb-6 text-blue-900 border-b-2 border-blue-200 pb-2"
+        >
+          حياته ونشأته
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="md:col-span-2">
+            <p class="text-lg mb-4 leading-relaxed">
+              وُلِد حبش بن عبد الله المروزي الحاسب في مدينة مرو بخراسان
+              (تركمانستان حاليًا) حوالي سنة 780 ميلادية. نشأ في بيئة علمية
+              مزدهرة حيث كانت مرو مركزًا مهمًا للعلوم في الدولة العباسية.
+            </p>
+            <p class="text-lg mb-4 leading-relaxed">
+              انتقل إلى بغداد في شبابه حيث انضم إلى "بيت الحكمة" الذي أسسه
+              الخليفة المأمون، والذي كان بمثابة أكاديمية علمية ضخمة تضم أفضل
+              العقول في ذلك الوقت من مختلف الحضارات.
+            </p>
+            <p class="text-lg leading-relaxed">
+              تميز حبش الحاسب بشخصية متواضعة وعقلية تحليلية دقيقة، وكان معروفًا
+              بدقته المتناهية في الحسابات الفلكية والرياضية مما أكسبه لقب
+              "الحاسب".
+            </p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img
+              src="https://www.aljazeera.net/wp-content/uploads/2014/07/001034d3-52e1-44c5-b9e4-4fe81fa8c5ec.jpeg?resize=686%2C513&quality=80"
+              alt="آثار مدينة مرو القديمة مسقط رأس حبش الحاسب"
+              class="rounded-lg mb-4 shadow-md w-full"
+            />
+            <p class="text-sm text-gray-600 text-center">
+              مدينة مرو القديمة مسقط رأس حبش الحاسب
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Discoveries Section -->
+      <section class="mb-16">
+        <h2
+          class="text-3xl font-bold mb-8 text-blue-900 border-b-2 border-blue-200 pb-2"
+        >
+          إنجازاته واكتشافاته
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Discovery 1 -->
+          <div
+            class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow"
+          >
+            <div class="bg-blue-100 p-4 rounded-lg mb-4">
+              <i data-feather="sun" class="text-blue-600 w-8 h-8"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">حساب قطر الأرض</h3>
+            <p class="text-gray-700">
+              قام بحساب قطر الأرض بدقة مذهلة تبلغ 7,850 ميل (القياس الحديث 7,926
+              ميل) من خلال قياسات زاوية الشمس في موقعين مختلفين.
+            </p>
+          </div>
+
+          <!-- Discovery 2 -->
+          <div
+            class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow"
+          >
+            <div class="bg-indigo-100 p-4 rounded-lg mb-4">
+              <i data-feather="moon" class="text-indigo-600 w-8 h-8"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">حركة القمر</h3>
+            <p class="text-gray-700">
+              وضع نظرية متقدمة لحركة القمر تضمنت مفاهيم القصور الذاتي والجاذبية
+              قبل نيوتن بثمانية قرون.
+            </p>
+          </div>
+
+          <!-- Discovery 3 -->
+          <div
+            class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow"
+          >
+            <div class="bg-purple-100 p-4 rounded-lg mb-4">
+              <i data-feather="star" class="text-purple-600 w-8 h-8"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">الزيج الممتحن</h3>
+            <p class="text-gray-700">
+              ألف كتاب "الزيج الممتحن" الذي احتوى على جداول فلكية دقيقة استخدمت
+              لقرون في العالم الإسلامي وأوروبا.
+            </p>
+          </div>
+
+          <!-- Discovery 4 -->
+          <div
+            class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow"
+          >
+            <div class="bg-green-100 p-4 rounded-lg mb-4">
+              <i data-feather="compass" class="text-green-600 w-8 h-8"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">الميل المحوري للأرض</h3>
+            <p class="text-gray-700">
+              حدد ميل محور الأرض بدقة تبلغ 23°35' (القيمة الحديثة 23°26') وربط
+              بين هذا الميل وتغير الفصول.
+            </p>
+          </div>
+
+          <!-- Discovery 5 -->
+          <div
+            class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow"
+          >
+            <div class="bg-yellow-100 p-4 rounded-lg mb-4">
+              <i data-feather="clock" class="text-yellow-600 w-8 h-8"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">الساعات الفلكية</h3>
+            <p class="text-gray-700">
+              صمم ساعات فلكية دقيقة تعمل بالماء والزئبق لقياس الوقت والمواقيت
+              الفلكية.
+            </p>
+          </div>
+
+          <!-- Discovery 6 -->
+          <div
+            class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow"
+          >
+            <div class="bg-red-100 p-4 rounded-lg mb-4">
+              <i data-feather="globe" class="text-red-600 w-8 h-8"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">خرائط النجوم</h3>
+            <p class="text-gray-700">
+              رسم خرائط دقيقة للنجوم تضمنت 1022 نجمة مع تحديد درجات سطوعها
+              وحركاتها.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Beliefs Section -->
+      <section class="mb-16 bg-white rounded-2xl p-8 shadow-lg">
+        <h2
+          class="text-3xl font-bold mb-6 text-blue-900 border-b-2 border-blue-200 pb-2"
+        >
+          معتقداته الفلسفية
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-3 text-indigo-800">
+              النظرة العلمية
+            </h3>
+            <p class="text-lg mb-4 leading-relaxed">
+              آمن حبش الحاسب بأن الكون يسير وفق قوانين رياضية يمكن للعقل البشري
+              اكتشافها وفهمها. كان يرى أن العلم التجريبي والرياضي هو الطريق
+              الأمثل لفك أسرار الكون.
+            </p>
+            <p class="text-lg leading-relaxed">
+              رفض التفسيرات الأسطورية للظواهر الفلكية وأصر على أن كل ظاهرة
+              طبيعية لها سبب مادي يمكن قياسه وحسابه.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-3 text-indigo-800">
+              العلاقة بين العلم والدين
+            </h3>
+            <p class="text-lg mb-4 leading-relaxed">
+              اعتبر أن دراسة الفلك هي شكل من أشكال عبادة الخالق، حيث أن فهم نظام
+              الكون يقرب الإنسان من عظمة الخالق.
+            </p>
+            <p class="text-lg leading-relaxed">
+              كان يرى أن العلم والدين لا يتعارضان، بل يكمل أحدهما الآخر، مع
+              التأكيد على أن العلم يجب أن يكون مستقلًا في منهجه.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Legacy Section -->
+      <section
+        class="bg-gradient-to-r from-indigo-900 to-blue-800 rounded-2xl p-8 text-white shadow-xl"
+      >
+        <h2 class="text-3xl font-bold mb-6 border-b-2 border-blue-300 pb-2">
+          إرثه وتأثيره
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <p class="text-lg mb-4 leading-relaxed">
+              على الرغم من نسيان اسمه في العصور اللاحقة، إلا أن أعمال حبش الحاسب
+              شكلت أساسًا للعديد من الاكتشافات الفلكية اللاحقة. تم نقل العديد من
+              جداوله الفلكية إلى أوروبا وترجمتها إلى اللاتينية.
+            </p>
+            <p class="text-lg leading-relaxed">
+              تأثر به العديد من العلماء اللاحقين مثل البيروني وابن الهيثم، كما
+              أن بعض حساباته كانت أكثر دقة من تلك التي قدمها كوبرنيكوس بعدة
+              قرون.
+            </p>
+          </div>
+          <div class="flex justify-center">
+            <img
+              src="https://doc.aljazeera.net/wp-content/uploads/2020/06/%D8%A7%D9%84%D8%B2%D9%8A%D8%AC.png%D9%8A.png"
+              alt="صفحات من كتاب الزيج الممتحن بحبش الحاسب"
+              class="rounded-lg border-4 border-white shadow-md w-full max-w-md"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Timeline Section -->
+      <section class="mt-16">
+        <h2
+          class="text-3xl font-bold mb-8 text-blue-900 border-b-2 border-blue-200 pb-2"
+        >
+          خط زمني لحياته
+        </h2>
+        <div class="relative">
+          <!-- Timeline line -->
+          <div
+            class="absolute left-1/2 h-full w-1 bg-blue-300 transform -translate-x-1/2"
+          ></div>
+
+          <!-- Timeline items -->
+          <div class="mb-8">
+            <div class="flex items-center">
+              <div
+                class="w-6 h-6 rounded-full bg-blue-600 absolute left-1/2 transform -translate-x-1/2"
+              ></div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center">
+              <div class="md:w-5/12 mb-4 md:mb-0 md:text-right px-4">
+                <h3 class="text-xl font-bold">٧٨٠ م</h3>
+                <p>ولادة حبش الحاسب في مرو</p>
+              </div>
+              <div class="md:w-2/12"></div>
+              <div class="md:w-5/12 px-4">
+                <img
+                  src="https://historymemo.wordpress.com/wp-content/uploads/2014/01/d8add8b1d98ad8b7d8a9-d8a7d984d8afd988d984d8a9-d8a7d984d8b9d8a8d8a7d8b3d98ad8a9-d988d8a7d984d8aad982d8b3d98ad985d8a7d8aa-d8a7d984d8a7.png"
+                  alt="خريطة الخلافة العباسية في عصر حبش الحاسب"
+                  class="rounded-lg shadow-sm w-1/2"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-8">
+            <div class="flex items-center">
+              <div
+                class="w-6 h-6 rounded-full bg-blue-600 absolute left-1/2 transform -translate-x-1/2"
+              ></div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center">
+              <div class="md:w-5/12 mb-4 md:mb-0 md:text-right px-4">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/ar/thumb/2/24/%D8%A8%D9%8A%D8%AA_%D8%A7%D9%84%D8%AD%D9%83%D9%85%D8%A9.jpg/330px-%D8%A8%D9%8A%D8%AA_%D8%A7%D9%84%D8%AD%D9%83%D9%85%D8%A9.jpg"
+                  alt="بيت الحكمة حيث عمل حبش الحاسب"
+                  class="rounded-lg shadow-sm w-1/2"
+                />
+              </div>
+              <div class="md:w-2/12"></div>
+              <div class="md:w-5/12 px-4">
+                <h3 class="text-xl font-bold">٨٠٥ م</h3>
+                <p>الانتقال إلى بغداد والانضمام إلى بيت الحكمة</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-8">
+            <div class="flex items-center">
+              <div
+                class="w-6 h-6 rounded-full bg-blue-600 absolute left-1/2 transform -translate-x-1/2"
+              ></div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center">
+              <div class="md:w-5/12 mb-4 md:mb-0 md:text-right px-4">
+                <h3 class="text-xl font-bold">٨٣٠ م</h3>
+                <p>قياس قطر الأرض بدقة مذهلة</p>
+              </div>
+              <div class="md:w-2/12"></div>
+              <div class="md:w-5/12 px-4">
+                <img
+                  src="https://philosmus.org/wp-content/uploads/2021/05/002510.jpg"
+                  alt="أدوات فلكية استخدمها حبش الحاسب"
+                  class="rounded-lg shadow-sm w-1/2"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-8">
+            <div class="flex items-center">
+              <div
+                class="w-6 h-6 rounded-full bg-blue-600 absolute left-1/2 transform -translate-x-1/2"
+              ></div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center">
+              <div class="md:w-5/12 mb-4 md:mb-0 md:text-right px-4">
+                <img
+                  src="https://al-furqan.com/wp-content/uploads/2022/03/Astronomical-.png"
+                  alt="مخطوطات حبش الحاسب الفلكية"
+                  class="rounded-lg shadow-sm w-1/2"
+                />
+              </div>
+              <div class="md:w-2/12"></div>
+              <div class="md:w-5/12 px-4">
+                <h3 class="text-xl font-bold">٨٥٠ م</h3>
+                <p>إصدار كتاب "الزيج الممتحن"</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-8">
+            <div class="flex items-center">
+              <div
+                class="w-6 h-6 rounded-full bg-blue-600 absolute left-1/2 transform -translate-x-1/2"
+              ></div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center">
+              <div class="md:w-5/12 mb-4 md:mb-0 md:text-right px-4">
+                <h3 class="text-xl font-bold">٨٦٠ م</h3>
+                <p>وفاة حبش الحاسب في بغداد</p>
+              </div>
+              <div class="md:w-2/12"></div>
+              <div class="md:w-5/12 px-4">
+                <img
+                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjt9bbE9gAcxWLQr2bvtOWtJAmAblCCOZ9IVs6uwAaSC6_aLfMAhnr5ZOBrfJWHbXtzqr8ZVHBKDUK4ILvSfXtzims4IFTQiJmRnaxvj1ee9LZ7HLUNdIgZlVf83WYLNwlhBZKYOSCd15Sy/s640/%25D8%25A7%25D9%2584%25D8%25AF%25D9%2588%25D9%2584%25D8%25A9+%25D8%25A7%25D9%2584%25D8%25B9%25D8%25A8%25D8%25A7%25D8%25B3%25D9%258A%25D8%25A9+1.jpg"
+                  alt="بغداد في العصر العباسي حيث عاش حبش الحاسب"
+                  class="rounded-lg shadow-sm w-1/2"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Note -->
+      <div class="mt-16 bg-white rounded-xl p-6 shadow-md text-center">
+        <p class="text-lg">
+          هذا البحث تم إعداده بعناية من قبل
+          <span class="font-bold text-blue-800">زين الدين</span> كمشروع تعريفي
+          بأحد أهم علماء الفلك المجهولين في الحضارة الإسلامية.
+        </p>
+      </div>
     </main>
 
     <custom-footer></custom-footer>
@@ -278,8 +392,10 @@
     <!-- Components -->
     <script src="components/navbar.js"></script>
     <script src="components/footer.js"></script>
-    
+
     <script src="script.js"></script>
-    <script>feather.replace();</script>
-</body>
+    <script>
+      feather.replace();
+    </script>
+  </body>
 </html>
