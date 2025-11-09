@@ -1,2 +1,2 @@
-this project is presentatation in arabic 
-this project is not public
+This project is presented in Arabic 
+This project is not public
